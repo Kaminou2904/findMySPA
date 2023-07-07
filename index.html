@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- <link rel="icon" href="images/logo.jpg"> -->
+    <!-- bootstrap links -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- font awesome link -->
+    <script src="js/fontawesome.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- owl carousel cdn link for css -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <title>findMySPA | Find the best SPA</title>
+</head>
+
+<body>
+    <!-- main div that wraps everything -->
+    <div class="main">
+
+        <!-- header div -->
+        <div class="header container">
+            <div class="addwraper d-flex justify-content-between align-items-center">
+                <p id="addPara" class="address text-capitalize m-0 mt-3 text-primary"><i class="fas fa-map-marker-alt me-2 text-danger"></i>powai
+                    mumbai
+                </p>
+                <h1 class="logo mt-3 text-danger">
+                    Find<span class="text-primary">class</span>
+                </h1>
+            </div>
+            <h2 class="whatText text-capitalize text-danger fw-bold">find your <span class="fw-bold text-primary text-capitalize">perfect SPA</span><br>retreat</h2>
+            <div class="searchBox d-dlex align-itemss-center">
+                <i class="fas fa-search  border border-light border-end-0 rounded-start m-0 searchIcon"></i>
+                <input type="text" class="searchInpu  border border-light border-start-0 w-75 rounded-end "
+                    placeholder="Search name, subject, stream, skill...">
+            </div>
+        </div>
+
+        <!-- div for categories -->
+        <h4 class="categoryHeading container mb-3 mt-5 fw-bold text-primary">Browse by location</h4>
+        <div class="categories container ">
+            <div class="categoryWrap d-flex">
+                <div onclick="openPopup(1)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <!-- <img src="./assets/images/scienceIcon-removebg-preview.png"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg"> -->
+                        <div class="mb-0 text-white fs-2 p-2 rounded-3 locaTab bg5">Thane</div>
+                    <p class="text-capitalize w-75 ">3 Centers</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(2)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <!-- <img src="./assets/images/schoolIcon-removebg-preview.png"
+                        alt="salon image" class="img-fluid w-75 border rounded categoryImg"> -->
+                        <div class="mb-0 text-white fs-2 p-2 rounded-3 locaTab bg1">Powai</div>
+                    <p class="text-capitalize w-75 ">4 centers</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(3)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <!-- <img src="https://icon-library.com/images/commerce-icon/commerce-icon-29.jpg" alt="salon image"
+                        class="img-fluid w-75 border rounded categoryImg"> -->
+                        <div class="mb-0 text-white fs-2 p-2 rounded-3 locaTab bg2">Andheri</div>
+                    <p class="text-capitalize w-75 ">2 centers</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(4)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <div class="mb-0 text-white fs-2 p-2 rounded-3 locaTab bg3">Mulund</div>
+                    <p class="text-capitalize w-75 ">9 centers</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(5)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <div class="mb-0 text-white fs-2 p-2 rounded-3 locaTab bg4">Goa</div>
+                    <p class="text-capitalize w-75 ">99 centers</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="openPopup(6)" class="categoryCard text-center d-flex flex-column  align-items-center">
+                    <div class="mb-0 text-white fs-2 p-2 rounded-3 locaTab bg5">Thane</div>
+                    <p class="text-capitalize w-75 ">12 centers</p>
+                    <div class="popupContent" id="popupContent">
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC gas refill</p>
+                            </div>
+                        </div>
+                        <div class="trendItem  m-2 p-2 d-flex align-items-center rounded-3">
+                            <img src="https://raw.githubusercontent.com/julien-gargot/images-placeholder/master/placeholder-square.png"
+                                class="img-fluid w-25 me-3" alt="ternding service">
+                            <div class="trendText">
+                                <p class="trentName fw-bold fs-6 my-0">AC cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popupContainer" onclick="closePopup()">
+                <div id="popup" class="popup">
+                    <span class="close-button" onclick="closePopup()">&times;</span>
+                    <div id="openContent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- div for carousel -->
+        <div class="carousel mt-5 container mb-5 pb-2">
+            <div class="owl-carousel owl-theme ">
+                <div class="items mx-1 ">
+                    <img src="./assets/images/Ad -.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./assets/images/Ad - 2.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./assets/images/Ad - 3.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./assets/images/Ad - 4.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./assets/images/Ad -.png" class="carouselImg" alt="">
+                </div>
+                <div class="items mx-1 ">
+                    <img src="./assets/images/Ad - 2.png" class="carouselImg" alt="">
+                </div>
+
+            </div>
+            <!-- <div class="banner container my-5">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/715/816/small/banner-abstract-background-board-for-text-and-message-design-modern-free-vector.jpg"
+                    class="bannerImg" style="width: 100%; height: 150px;" alt="">
+            </div> -->
+        </div>
+
+        <div class="featureMain container">
+            <h2 class="text-danger fw-bold">Featured <span class="text-primary">Classes</span></h2>
+            <div class="featured  mb-3">
+                <div class="featWrap py-3 px-1 d-flex">
+                    <div class="featItem border me-3">
+                        <img src="./assets/images/WhatsApp Image 2023-06-22 at 18.02.15.jpeg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3 mb-0">
+                                    <i class="fas fa-map-marker-alt me-2 mb-0"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p class="mb-0"><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                        <p><i class="fas fa-star me-1"></i>4.6</p>
+                                    </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                        <p><i class="fas fa-star me-1"></i>4.6</p>
+                                    </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                        <p><i class="fas fa-star me-1"></i>4.6</p>
+                                    </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="nearClass container mb-5 pb-4">
+            <h2 class="mb-3">Nearby classes</h2>
+            <div class="nearWrap row">
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg">
+                            <img src="./assets/images/WhatsApp Image 2023-06-22 at 18.02.15.jpeg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                <a href="classDetail.html" class="nav-link">Exclence Classes In Kurla</a>
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg ">
+                            <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                Ecellence Classes in Kurla
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg ">
+                            <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                Ecellence Classes in Kurla
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 p-2 py-0">
+                    <div class="nearItem d-dlex border p-2">
+                        <div class="nearImg ">
+                            <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="" class="nearImgImg img-fluid">
+                        </div>
+                        <div class="nearData">
+                            <div class="nearName">
+                                Ecellence Classes in Kurla
+                            </div>
+                            <div class="nearLocation text-muted"><i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai</div>
+                            <div class="nearRating">
+                                <p><i class="fas fa-star me-1"></i>4.6</p>
+                            </div>
+                            <div class="nearTagWrap">
+                                <div class="nearTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">CLET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="nearClass container mb-1">
+            <h2 class="text-danger fw-bold">Nearby <span class="text-primary">Classes</span></h2>
+            <div class="featured  mb-5">
+                <div class="featWrap py-3 px-1 d-flex">
+                    <div class="featItem border me-3">
+                        <img src="./assets/images/WhatsApp Image 2023-06-22 at 18.02.15.jpeg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3 mb-0">
+                                    <i class="fas fa-map-marker-alt me-2 mb-0"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p class="mb-0"><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                        <p><i class="fas fa-star me-1"></i>4.6</p>
+                                    </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                        <p><i class="fas fa-star me-1"></i>4.6</p>
+                                    </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featItem border me-3">
+                        <img src="https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg" alt="image"
+                            class="featImg img-fluid mb-2">
+                        <div class="featData">
+                            <div class="featNameWrap d-flex justify-content-between">
+                                <div class="featName"><a href="classDetail.html" class="nav-link">Exclence Classes In
+                                        Kurla</a></div>
+                                <!-- <div class="featRating">
+                                        <p><i class="fas fa-star me-1"></i>4.6</p>
+                                    </div> -->
+                            </div>
+                            <div class="featLocaWrap d-flex justify-content-between">
+                                <div class="featLocation text-muted mb-3">
+                                    <i class="fas fa-map-marker-alt me-2"></i>Powai, Mumbai
+                                </div>
+                                <div class="featRating">
+                                    <p><i class="fas fa-star me-1"></i>4.6</p>
+                                </div>
+                            </div>
+
+                            <div class="featTagWrap mb-0">
+                                <div class="featTag d-flex">
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">NEET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">JEE</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">MHT-CET</p>
+                                    <p class="p-1 px-2 text-black mb-0 mx-1 mt-1">Something</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about text-center mb-3 pb-5 container">
+            <h1 class="text-danger fw-bolder">Find<span class="text-primary">class</span></h1>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. In veritatis earum omnis. Voluptas molestias quas, et eos aspernatur deleniti cupiditate sunt molestiae neque optio, dolores ullam facilis eaque ea! Incidunt et libero omnis quisquam corrupti iste dolorum quia autem itaque magni quod adipisci dolorem delectus aspernatur.</p>
+        </div>
+
+        <!-- div for footer -->
+        <div class="footer p-0 w-100 bg-white">
+            <footer class="d-flex w-100 justify-content-around  p-2">
+                <div class="navItem  text-center">
+                    <i class="fas fa-home "></i>
+                    <p class="m-0">Home</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-th-large"></i>
+                    <p class="m-0">Category</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-heart"></i>
+                    <p class="m-0">Wishlist</p>
+                </div>
+                <div class="navItem text-center">
+                    <i class="fas fa-user-alt"></i>
+                    <p class="m-0">Profile</p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- our own javascript -->
+    <script src="./js/main.js"></script>
+
+    <!-- jQuery cdn link -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+
+    <!-- bootstrap javascript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl carousel javascript link -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1.2,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
