@@ -377,6 +377,11 @@
     z-index: 2;
 }
 
+.suggetions{
+    height: 90vh;
+    overflow-y: auto;
+}
+
 hr{
     margin-top: 5px;
     border: none;
