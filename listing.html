@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- <link rel="icon" href="images/logo.jpg"> -->
+    <!-- bootstrap links -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- font awesome link -->
+    <script src="js/fontawesome.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- owl carousel cdn link for css -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <title>findMySPA | SPA listings</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="mainHeader p-2">
+            <h4 class="d-flex"><a class="nav-link me-3" href="index.html"><i class="fas fa-arrow-left"></i></a>Listings
+            </h4>
+        </div>
+        <div class="serarchBoxWrap pt-5 container">
+            <div class="searchBox d-dlex align-itemss-center">
+                <i class="fas fa-search  border border-light border-end-0 rounded-start m-0 searchIcon"></i>
+                <input type="text" id="searchInpu"
+                    class="searchInpu  border border-light border-start-0 w-75 rounded-end "
+                    placeholder="Search name, subject, stream, skill...">
+            </div>
+            <div id="srearchPopup" class="p-3 pt-4">
+                <div class="searchBox d-dlex align-itemss-center">
+                    <a href="listing.html" class="nav-link d-inline"> <i class="fas fa-angle-left border border-light border-end-0 rounded-start m-0 searchIcon"></i></a>
+                    <!-- <i class="fas fa-search  border border-light border-end-0 rounded-start m-0 searchIcon"></i> -->
+                    <input type="text" id="searchInpu"
+                        class="searchInpu  border border-light border-start-0 w-75 rounded-end "
+                        placeholder="Search name, subject, stream, skill...">
+                </div>
+                <div class="suggetions pt-4 ">
+                    <p class="searchPopupTxt mb-0 mt-1"> something in here </p>
+                    <hr>
+                    <p class="searchPopupTxt mb-0 mt-1"> something in here </p>
+                    <hr>
+                    <p class="searchPopupTxt mb-0 mt-1"> something in here </p>
+                    <hr>
+                    <p class="searchPopupTxt mb-0 mt-1"> something in here </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery cdn link -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+
+    <!-- our own javascript -->
+    <script src="./js/listing.js"></script>
+
+    <!-- bootstrap javascript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- owl carousel javascript link -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1.2,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+</body>
+
+</html>

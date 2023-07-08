@@ -1,5 +1,7 @@
 document.querySelector(".popupContainer").style.display = "none";
 document.querySelector("#popup").style.bottom = "-60vh";
+const searchInpu = document.getElementById('searchInpu');
+const srearchPopup = document.getElementById('srearchPopup');
 
 function openPopup(divNumber) {
     const childDiv = document.querySelectorAll(".categoryCard .popupContent")[divNumber - 1];
@@ -22,3 +24,9 @@ function closePopup() {
         popupContainer.style.display = "none";
     }, 300);
 }
+
+// function to hide and show the popup after typig in the input box
+
+searchInpu.addEventListener('click', ()=>{
+    srearchPopup.style.display = 'block';
+})
