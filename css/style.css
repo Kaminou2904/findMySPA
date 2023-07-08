@@ -410,3 +410,11 @@ hr{
     padding-bottom: 0px;
     width: 90%;
 }
+
+.listName{
+    font-size: 18px;
+}
+
+.listLocation{
+    font-size: 12px;
+}
