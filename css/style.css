@@ -42,6 +42,7 @@
     padding: 14px;
     padding-bottom: 13px;
     padding-right: 10px;
+    border: none !important;
     /* box-shadow: -6px 0 10px rgb(0, 0, 0, 0.5); */
 }
 
@@ -51,6 +52,7 @@
     padding: 10px;
     margin: 0;
     margin-left: -5px;
+    border: none !important;
     /* box-shadow: 6px 0 10px rgb(0, 0, 0, 0.5); */
 }
 
@@ -101,19 +103,19 @@
 }
 
 .bg1{
-    background-color: #F9C2EB;
+    background-color: #fceaf8;
 }
 .bg2{
-    background-color: #D5ABDB;
+    background-color: #e3c6e7;
 }
 .bg3{
-    background-color: #E2CAF2;
+    background-color: #e8deef;
 }
 .bg4{
-    background-color: #BBABDB;
+    background-color: #dcd5ea;
 }
 .bg5{
-    background-color: #C5C2F9;
+    background-color: #dddcf5;
 }
 
 .categoryCard:hover .categoryImg{
@@ -190,7 +192,7 @@
 }
 
 .featItem{
-    width: 210px;
+    width: 240px;
     border-radius: 10px;
     overflow: hidden;
     border: none !important;
@@ -201,6 +203,10 @@
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.featImg img{
+    border-radius: 10px;
 }
 
 .featData{
@@ -214,9 +220,13 @@
 }
 
 .featRating{
-    width: 50px !important;
-    font-size: 12px;
+    /* width: 50px !important; */
+    font-size: 14px;
     white-space: nowrap;
+}
+
+.featRating p i{
+    box-shadow: 0 0 10px rgb(203, 203, 203);
 }
 
 .featLocation{
@@ -225,6 +235,7 @@
 
 .featTagWrap{
     overflow-x: auto;
+    display: none;
 }
 
 .featTag{
@@ -297,6 +308,11 @@
 .fa-star:before {
     content: "\f005";
     color: gold;
+}
+
+.aboutTxt{
+    font-size: 12px;
+    color: gray;
 }
 
 .footer{
