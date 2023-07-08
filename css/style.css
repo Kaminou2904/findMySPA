@@ -415,6 +415,14 @@ hr{
     font-size: 18px;
 }
 
+.ratingn{
+    font-size: 10px;
+}
+
+.ratingCount{
+    font-size: 12px;
+}
+
 .listLocation{
     font-size: 12px;
 }
