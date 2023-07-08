@@ -1,6 +1,7 @@
 document.querySelector(".popupContainer").style.display = "none";
 document.querySelector("#popup").style.bottom = "-60vh";
 const searchInpu = document.getElementById('searchInpu');
+const searchInpuPop = document.getElementById('searchInpuPop');
 const srearchPopup = document.getElementById('srearchPopup');
 
 function openPopup(divNumber) {
@@ -29,4 +30,5 @@ function closePopup() {
 
 searchInpu.addEventListener('click', ()=>{
     srearchPopup.style.display = 'block';
+    searchInpuPop.focus();
 })

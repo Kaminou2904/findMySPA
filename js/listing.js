@@ -1,4 +1,5 @@
 const searchInpu = document.getElementById('searchInpu');
+const searchInpuPop = document.getElementById('searchInpuPop');
 const srearchPopup = document.getElementById('srearchPopup');
 
 
@@ -6,4 +7,5 @@ const srearchPopup = document.getElementById('srearchPopup');
 
 searchInpu.addEventListener('click', ()=>{
     srearchPopup.style.display = 'block';
+    searchInpuPop.focus();
 })
