@@ -393,9 +393,14 @@ hr{
 
 .listItem{
     width: auto;
-    height: 200px;
+    height: 250px;
     padding: 0px !important;
     white-space: nowrap;
+}
+
+.listImg{
+    height: 100%;
+    width: 100%;
 }
 
 .listData{
