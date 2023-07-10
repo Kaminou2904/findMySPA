@@ -3,6 +3,7 @@ document.querySelector("#popup").style.bottom = "-60vh";
 const searchInpu = document.getElementById('searchInpu');
 const searchInpuPop = document.getElementById('searchInpuPop');
 const srearchPopup = document.getElementById('srearchPopup');
+const searchBoxPopBack = document.getElementById('searchBoxPopBack');
 
 function openPopup(divNumber) {
     const childDiv = document.querySelectorAll(".categoryCard .popupContent")[divNumber - 1];
@@ -31,4 +32,8 @@ function closePopup() {
 searchInpu.addEventListener('click', ()=>{
     srearchPopup.style.display = 'block';
     searchInpuPop.focus();
+})
+
+searchBoxPopBack.addEventListener('click', ()=>{
+    srearchPopup.style.display = 'none';
 })
