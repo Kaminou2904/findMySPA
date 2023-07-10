@@ -466,6 +466,7 @@ hr{
 
 .facilityCard{
     min-width: 70px;
+    background-color: rgb(235, 255, 235) !important;
 }
 
 .faciAddress{
