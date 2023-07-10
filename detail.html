@@ -54,12 +54,21 @@
         </div>
 
         <div class="info container mb-5 pb-5">
-            <div class="spaName">
+            <div class="spaInfo">
                 <h3 class="mb-0">Mudita SPA</h3>
                 <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> Powai, Mumbai</p>
                 <p class="desc text-muted mt-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi fuga mollitia cupiditate eaque voluptate incidunt cum corporis earum? Obcaecati, adipisci! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui suscipit velit, inventore, provident totam voluptatum ullam rem numquam eaque quis minus minima quisquam alias accusantium repellat. Fugit temporibus tempore quae.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi fuga mollitia cupiditate eaque voluptate incidunt cum corporis earum? Obcaecati
                 </p>
+                <div class="extraInfo">
+                    <div class="phoneNo text-muted"><i class="fas fa-phone-alt"></i> 9898989898</div>
+                    <div class="awayIcon d-flex align-items-center mb-3">
+                        <div class="awayIconWrap">
+                            <img src="./assets/images/awayIcon.png" alt="away icon" class="img-fluid">
+                        </div>
+                        <span class="ratingCount text-muted ms-1">1.4 Km away</span>
+                    </div>
+                </div>
                 <div class="detailRating bg-light rounded-3 p-2 d-flex justify-content-between mt-5s">
                     <div class="starts">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -75,10 +84,50 @@
                         <i class="fas fa-user p-3 rounded-circle text-muted border d-block fs-5 userIcon"></i>
                     </div>
                 </div>
+                <div class="spaFacilities mt-4">
+                    <div class="facilitiesWrap d-flex">
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-car d-block fs-1"></i>
+                            <p class="mb-0">Parking</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-clock fs-1"></i>
+                            <p class="mb-0">Waiting</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-wifi fs-1"></i>
+                            <p class="mb-0">Wifi</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-wind fs-1"></i>
+                            <p class="mb-0">Ac</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-shower fs-1"></i>
+                            <p class="mb-0">Shower</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-toilet-paper fs-1"></i>
+                            <p class="mb-0">Towel</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-music fs-1"></i>
+                            <p class="mb-0">Music</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-spray-can fs-1"></i>
+                            <p class="mb-0">Perfume</p>
+                        </div>
+                        <div class="facilityCard p-2 text-center rounded-3 bg-light text-secondary me-2">
+                            <i class="fas fa-wine-bottle fs-1"></i>
+                            <p class="mb-0">Water</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="floatBtnWrap container">
+        <div class="floatBtnWrap container bg-white pt-2">
             <div class="floatBtns d-flex justify-content-around align-items-center">
                 <div class="floatPrice text-muted rounded-3 bg-light p-2 px-3">
                     <span class="text-dark fw-bold fs-4"><i class="fas fa-rupee-sign"></i>299</span> per hour
@@ -114,13 +163,15 @@
                        nav: false
                    },
                    600: {
-                       items: 3,
-                       nav: false
+                       items: 2,
+                       nav: false,
+                       margin: 5
                    },
                    1000: {
-                       items: 4,
+                       items: 3,
                        nav: false,
-                       loop: false
+                       loop: false,
+                       margin: 5
                    }
                }
            })

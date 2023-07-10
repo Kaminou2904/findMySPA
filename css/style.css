@@ -432,6 +432,8 @@ hr{
     font-size: 12px;
 }
 
+/* styling for detail page */
+
 .desc{
     font-size: 12px;
 }
@@ -455,6 +457,15 @@ hr{
 }
 .userIcon:nth-child(5){
     z-index: 1;
+}
+
+.facilitiesWrap{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.facilityCard{
+    min-width: 70px;
 }
 
 .floatBtnWrap{
