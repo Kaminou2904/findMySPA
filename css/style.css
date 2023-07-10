@@ -248,6 +248,8 @@
 .featOffers{
     background-color: rgb(213, 254, 213);
     font-weight: 600;
+    font-size: 12px;
+    width: max-content;
 }
 
 .featTagWrap{
@@ -414,16 +416,25 @@ hr{
     /* margin: 5px; */
 }
 
+.listOffers{
+    background-color: rgb(213, 254, 213);
+    font-weight: 600;
+    font-size: 12px;
+    width: max-content;
+    position: relative;
+    top: 40px;
+}
+
 .listImg{
     height: 100%;
 }
 
 .listData{
     position: relative;
-    bottom: 90px;
+    bottom: 100px;
     background-color: white;
-    padding: 10px;
-    padding-bottom: 0px;
+    padding: 5px 10px;
+    /* padding-bottom: 5px; */
     width: 90%;
 }
 
