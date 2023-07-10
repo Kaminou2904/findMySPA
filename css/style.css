@@ -245,6 +245,11 @@
     font-size: 12px;
 }
 
+.featOffers{
+    background-color: rgb(213, 254, 213);
+    font-weight: 600;
+}
+
 .featTagWrap{
     overflow-x: auto;
     display: none;
