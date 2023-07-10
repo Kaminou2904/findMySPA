@@ -432,9 +432,60 @@ hr{
     font-size: 12px;
 }
 
+.desc{
+    font-size: 12px;
+}
+
+.userIcon{
+    background-color: white;
+    margin-left: -25px;
+}
+
+.userIcon:nth-child(1){
+    z-index: 5;
+}
+.userIcon:nth-child(2){
+    z-index: 4;
+}
+.userIcon:nth-child(3){
+    z-index: 3;
+}
+.userIcon:nth-child(4){
+    z-index: 2;
+}
+.userIcon:nth-child(5){
+    z-index: 1;
+}
+
+.floatBtnWrap{
+    position: fixed;
+    padding-bottom: 20px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.floatBooking, .floatPrice{
+    width: 45%;
+    white-space: nowrap;
+    text-align: center;
+}
+
 @media screen and (min-width: 990px) {
     .listItem{
         margin: 10px;
         height: 200px;
     }
 }
+
+
+
+
+
+/* .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+    position: relative;
+    bottom: 34px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
