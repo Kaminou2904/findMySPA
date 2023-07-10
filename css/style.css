@@ -203,10 +203,20 @@
     box-shadow: 0 0 20px rgb(195, 195, 195);
 }
 
+.hoverRating{
+    position: relative;
+    top: 8px;
+}
+
+.hoverRate, .hoverAway{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .featImg{
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    margin-top: -28px;
     /* height: 60%; */
 }
 
