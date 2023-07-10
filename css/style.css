@@ -472,9 +472,27 @@ hr{
     font-size: 12px;
 }
 
+.signCard{
+    width: 360px;
+    margin: 5px;
+}
+
+.signPrice{
+    font-size: 14px;
+}
+
+.signCardImg{
+    width: 35%;
+}
+
+.comment{
+    font-size: 14px;
+}
+
 .floatBtnWrap{
     position: fixed;
     padding-bottom: 20px;
+    margin: auto;
     bottom: 0px;
     width: 100%;
     z-index: 10;
@@ -490,6 +508,12 @@ hr{
     .listItem{
         margin: 10px;
         height: 200px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .signCard{
+        width: 90%;
     }
 }
 
