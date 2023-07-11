@@ -251,8 +251,8 @@
     font-size: 12px;
     width: max-content;
     position: relative;
-    right: 133px;
-    bottom: 20px;
+    /* right: 133px; */
+    bottom: 0px;
     color: white;
 }
 
@@ -294,18 +294,18 @@
 }
 
 .nearImg{
-    width: 45%;
+    width: 50%;
 }
 .nearImgImg{
     width: 100%;
     border-radius: 10px;
     filter: brightness(0.8);
+    margin-bottom: -19px;
 }
 
 .nearData{
     width: 60%;
     padding-left: 10px;
-    margin-bottom: -20px;
 }
 
 .nearLocation{
