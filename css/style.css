@@ -246,10 +246,14 @@
 }
 
 .featOffers{
-    background-color: rgb(213, 254, 213);
+    background-color: rgb(55 55 55 / 59%);
     font-weight: 600;
     font-size: 12px;
     width: max-content;
+    position: relative;
+    right: 133px;
+    bottom: 20px;
+    color: white;
 }
 
 .featTagWrap{
@@ -295,14 +299,20 @@
 .nearImgImg{
     width: 100%;
     border-radius: 10px;
+    filter: brightness(0.8);
 }
 
 .nearData{
     width: 60%;
     padding-left: 10px;
+    margin-bottom: -20px;
 }
 
 .nearLocation{
+    font-size: 12px;
+}
+
+.nearAway{
     font-size: 12px;
 }
 
