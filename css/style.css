@@ -476,6 +476,15 @@ hr{
 
 /* styling for detail page */
 
+.backBtn i{
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.319) !important;
+    font-size: 18px !important;
+}
+
 .desc{
     font-size: 12px;
 }
