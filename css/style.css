@@ -32,9 +32,10 @@
 }
 
 .searchBox{
-    box-shadow: 0 0 15px #cccbcb;
+    /* box-shadow: 0 0 15px #cccbcb; */
     border-radius: 10px;
     overflow: hidden;
+    border: 1px solid rgb(166, 166, 166);
 }
 
 .searchBoxPop{
