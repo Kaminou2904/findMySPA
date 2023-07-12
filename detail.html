@@ -30,7 +30,10 @@
 <body>
 
     <div class="main">
-        <div class="backBtn">
+        <div id="nav" class="nav w-100 bg-light py-3 pt-2 ps-5">
+            <h1 class="m-0">Details</h1>
+        </div>
+        <div id="backBtnid" class="backBtn">
             <i class="fas fa-arrow-left fs-4 rounded-circle bg-secondary text-white p-2"></i>
         </div>
         <div class="carousel container p-0 pb-2 ">
@@ -56,7 +59,7 @@
             </div>
         </div>
 
-        <div class="info container mb-3">
+        <div id="info" class="info container mb-3">
             <div class="spaInfo">
                 <h3 class="mb-0">Mudita SPA</h3>
                 <p class="text-muted mb-0"><i class="fas fa-map-marker-alt text-success"></i> Powai, Mumbai</p>
@@ -88,7 +91,8 @@
                         <span class="ratingCount text-muted ms-1">1.4 Km away</span>
                     </div>
                     <div class="faciAddress mb-3 mt-2">
-                        <p class="text-muted"><i class="fas fa-map-marker-alt fs-6 text-success"></i> 1st Floor, Rajveer Royals, Guru
+                        <p class="text-muted"><i class="fas fa-map-marker-alt fs-6 text-success"></i> 1st Floor, Rajveer
+                            Royals, Guru
                             Hargovindji Rd, Shaheed Bhagat Singh Society, Ekta Nagar, Chakala, Andheri East, Mumbai,
                             Maharashtra 400093</p>
                     </div>
@@ -213,7 +217,8 @@
             <h3>Ratings & Reviews</h3>
             <div class="ratingDiv mt-3">
                 <div class="ratingDiv">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
                     <input type="text" class="form-control" placeholder="Name">
                     <input type="text" class="form-control my-2" placeholder="Write a comment...">
                     <div class="submitBtn btn btn-success">
@@ -224,37 +229,45 @@
             <div class="reviewDiv mt-3 mb-5 pb-5">
                 <div class="reviewCard">
                     <div class="reviewName">
-                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i class="fas fa-star me-1"></i>4.6</span></p>
+                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i
+                                    class="fas fa-star me-1"></i>4.6</span></p>
                     </div>
                     <div class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio veritatis nisi quis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio
+                        veritatis nisi quis.
                     </div>
                     <hr>
                 </div>
                 <div class="reviewCard">
                     <div class="reviewName">
-                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i class="fas fa-star me-1"></i>4.6</span></p>
+                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i
+                                    class="fas fa-star me-1"></i>4.6</span></p>
                     </div>
                     <div class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio veritatis nisi quis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio
+                        veritatis nisi quis.
                     </div>
                     <hr>
                 </div>
                 <div class="reviewCard">
                     <div class="reviewName">
-                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i class="fas fa-star me-1"></i>4.6</span></p>
+                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i
+                                    class="fas fa-star me-1"></i>4.6</span></p>
                     </div>
                     <div class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio veritatis nisi quis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio
+                        veritatis nisi quis.
                     </div>
                     <hr>
                 </div>
                 <div class="reviewCard">
                     <div class="reviewName">
-                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i class="fas fa-star me-1"></i>4.6</span></p>
+                        <p class="mb-0 fw-bold">Vikas Kanoo <span class="fw-normal"><i
+                                    class="fas fa-star me-1"></i>4.6</span></p>
                     </div>
                     <div class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio veritatis nisi quis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti distinctio
+                        veritatis nisi quis.
                     </div>
                     <hr>
                 </div>
@@ -309,30 +322,48 @@
                     }
                 }
             })
-        });
 
-        $('#owlcarousel1').owlCarousel({
-            loop: true,
-            margin: 10,
-            pagiantion: false,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            responsive: {
-                0: {
-                    items: 1,
-                    dots: false
-                },
-                600: {
-                    items: 1,
-                    dots: false
-                },
-                1000: {
-                    items: 1,
-                    dots: false
+            $('#owlcarousel1').owlCarousel({
+                loop: true,
+                margin: 10,
+                pagiantion: false,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        dots: false
+                    },
+                    600: {
+                        items: 1,
+                        dots: false
+                    },
+                    1000: {
+                        items: 1,
+                        dots: false
+                    }
                 }
-            }
-        })
+            });
+
+            // function for the back btn
+            const backBtn = document.getElementById('backBtnid');
+            backBtn.addEventListener('click', () => history.back());
+
+            // function for the header
+            const info = document.getElementById('info');
+            const nav = document.getElementById('nav');
+
+            window.addEventListener('scroll', function () {
+                const rect = info.getBoundingClientRect();
+                if (rect.top >= 0) {
+                    nav.style.top = '-60px';
+                } else {
+                    nav.style.top = '0px';
+                }
+            });
+
+        });
     </script>
 </body>
 </body>

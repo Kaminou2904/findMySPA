@@ -476,9 +476,16 @@ hr{
 
 /* styling for detail page */
 
+.nav{
+    position: fixed;
+    top: -60px;
+    left: 0px;
+    z-index: 12;
+}
+
 .backBtn i{
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 12;
     top: 10px;
     left: 10px;
     background-color: rgba(0, 0, 0, 0.319) !important;
