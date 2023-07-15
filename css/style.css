@@ -1,4 +1,8 @@
 @font-face {
+    font-family: 'font-extrabold';
+    src: url('../font/Roboto-Black.ttf');
+}
+@font-face {
     font-family: 'font-bold';
     src: url('../font/Roboto-Bold.ttf');
 }
@@ -15,6 +19,9 @@
     src: url('../font/Roboto-Thin.ttf');
 }
 
+.font-extrabold{
+    font-family: 'font-extrabold', sans-serif !important;
+}
 .font-bold{
     font-family: 'font-bold', sans-serif !important;
 }
