@@ -42,6 +42,14 @@
     font-family: 'font-regular', sans-serif;
 }
 
+body{
+    background-color: ivory;
+}
+
+.brandcolor1{
+    color: #6A0DAD !important;
+}
+
 .header h3{
     font-size: 20px;
     color: #404040;
