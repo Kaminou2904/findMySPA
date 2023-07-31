@@ -310,7 +310,7 @@ body{
 }
 
 .featOffers{
-    background-color: rgba(70, 70, 70, 0.59);
+    background-color: rgb(234, 234, 234);
     font-weight: 600;
     font-size: 12px;
     width: max-content;
@@ -318,6 +318,7 @@ body{
     /* right: 133px; */
     bottom: 0px;
     color: white;
+    color: black;
 }
 
 .featTagWrap{
