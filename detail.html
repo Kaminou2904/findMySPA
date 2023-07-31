@@ -296,12 +296,12 @@
 
         <div class="popupFormCont  container-fluid">
             <div class="popupForm bg-white rounded-3 p-3">
-                <label for="number" class="fs-5 mb-3">Enter your number</label>
+                    <label for="number" class="fs-5 mb-3">Enter your number</label>
                 <div class="d-flex justify-content-center align-items-center border rounded-3 ps-2">
-                    <p class="m-0">+91 </p><input type="tel" class="form-control shadow-none border-0" placeholder="Enter your number" id="number">
+                    <p class="m-0">+91 </p><input type="tel" class="numInpu form-control shadow-none border-0" placeholder="Enter your number" id="number" required>
                 </div>
                 <div class="subWrap text-end">
-                    <div class="btn btn-primary mt-3">Submit</div>
+                    <div id="subBtn" class="subBtn btn btn-primary mt-3">Submit</div>
                 </div>
             </div>
         </div>
@@ -402,6 +402,12 @@
             }
 
             const popupTime = setTimeout(popupFunc, 5000);
+
+            // submit function 
+            const subBtn = document.querySelector('.subBtn');
+            subBtn.addEventListener('click', ()=>{
+                popupCont.style.display = 'none';
+            })
         });
     </script>
 </body>
