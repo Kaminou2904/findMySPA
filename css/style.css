@@ -645,6 +645,10 @@ hr{
     align-items: center;
 }
 
+.popupForm{
+    width: min(100%, 600px);
+}
+
 @media screen and (min-width: 990px) {
     .listItem{
         margin: 10px;
